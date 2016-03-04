@@ -1,0 +1,32 @@
+# file: metadata.yml
+
+---
+name: atg_number_search
+version: 0.1
+type: passthrough
+main_module: main.py
+url: http://ionomicshub.org/arabidopsis/ajax
+description: 'Returns a JSON response of all information contained in trays for which the ATG number matches'
+endpoints:
+    /access/DataSearchJson.action:
+        get:
+            summary: Returns a JSON response for matched ATG number
+            description: Returns a JSON response of all information contained in trays specified by skip and limit for which the ATG number matches
+            parameters:
+                - name: ATGNum
+                  description: ATGNum
+                  type: string
+                  format: string
+                  required: true
+                - name: Skip
+                  description: Skip
+                  type: integer
+                  format: int32
+                  required: true
+                  default: 0
+                - name: Limit
+                  description: Limit
+                  type: integer
+                  format: int32
+                  required: true
+                  default: 10
