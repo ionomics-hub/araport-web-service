@@ -7,7 +7,7 @@ type: passthrough
 main_module: main.py
 url: http://ionomicshub.org/arabidopsis/ajax/DataSearchJson.action
 description: 'Returns a JSON response of all information contained in trays for which the ATG number matches'
-icon: logo.gif
+icon: logo.GIF
 endpoints:
     /access:
         get:
