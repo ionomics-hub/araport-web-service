@@ -6,13 +6,13 @@ version: 0.1
 type: passthrough
 main_module: main.py
 url: http://ionomicshub.org/arabidopsis/ajax/DataSearchJson.action
-description: 'Returns a JSON response of all information contained in trays for which the ATG number matches'
+description: 'iHUB Collaborative International Network for Ionomics. Improving our understanding of how plants take up, transport and store their nutrient and toxic elements, collectively known as the ionome, will benefit human health and the natural environment. Here you will find curated ionomic data on many thousands of plant samples freely available to the public.'
 icon: logo.GIF
 endpoints:
     /access:
         get:
-            summary: Returns a JSON response for matched ATG number
-            description: Returns a JSON response of all information contained in trays specified by skip and limit for which the ATG number matches
+            summary: Returns a JSON response of all information contained in trays specified by skip and limit for which the ATG number matches
+            description: iHUB Collaborative International Network for Ionomics. Improving our understanding of how plants take up, transport and store their nutrient and toxic elements, collectively known as the ionome, will benefit human health and the natural environment. Here you will find curated ionomic data on many thousands of plant samples freely available to the public. 
             parameters:
                 - name: ATGNum
                   description: ATGNum
